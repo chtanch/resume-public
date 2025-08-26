@@ -201,7 +201,7 @@
 	%---------%
 	
 	\tinysection{Summary}
-	Simplified version of a monstrosity that I built back in college using current best practices.
+	Software engineer skilled in generative AI and computer vision applications. Experienced in deep learning-based computer vision and video/image processing in OpenCV, Python, and C++. Posseses both research and software development background. PhD from Nanyang Technological University, Singapore.
 	
 	%--------%
 	% Skills %
@@ -211,12 +211,18 @@
 	
 	\begin{multicols}{2}
 		\begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=75pt]
-			\item[\textbf{Automation}] SaltStack, Ansible, Chef, Puppet
-			\item[\textbf{Cloud}] Salt-Cloud, Linode, GCP, AWS
-			\item[\textbf{Languages}] Python, Bash, PHP, Perl, VB/C\#.Net
-			\item[\textbf{OS}] Debian, Ubuntu, CentOS, BSD, AIX
-			\item[\textbf{Policies}] CIS, SOC2, PCI-DSS, GDPR, ITIL
-			\item[\textbf{Testing}] Pytest, Docker, CircleCI, Jenkins, Inspec
+			% \item[\textbf{Automation}] SaltStack, Ansible, Chef, Puppet
+			% \item[\textbf{Cloud}] Salt-Cloud, Linode, GCP, AWS
+			\item[\textbf{Languages}] Python, Bash, C++, Latex
+			\item[\textbf{OS}] Ubuntu, Windows
+			% \item[\textbf{Policies}] CIS, SOC2, PCI-DSS, GDPR, ITIL
+			% \item[\textbf{Testing}] Pytest, Docker, CircleCI, Jenkins, Inspec
+			% \item[\textbf{Languages}] Python, Bash, C++
+			\item[\textbf{Libraries}] OpenAI API, Huggingface transformers, llamaindex, OpenCV, Scikit-learn, Streamlit, Pytorch, TensorFlow, Keras
+			\item[\textbf{CI/CD}] Git, GitHub Actions
+			\item[\textbf{MLOps}] MLflow, Arize Phoenix, DVC
+			\item[\textbf{Deployment}] Docker, Docker Compose
+			\item[\textbf{Coding assistants}] Github Copilot, Roo Code
 		\end{itemize}
 	\end{multicols}
 	
@@ -225,41 +231,74 @@
 	%------------%
 	
 	\section{Experience}
-	
-	\headingBf{Consulting Corp}{Jul 2015 -- Jun 2025}
-	\headingIt{Senior DevOps Engineer (FTE Consultant)}{}
+
+	\headingBf{Intel Malaysia (Intel Flex)}{Mar 2022 - Present}
+	\headingIt{Senior AI Software Development Engineer}{}
 	\begin{resume_list}
-		\itemTitle{Client: Notable Placement}
-		\item Analyzed network traffic patterns to identify bottlenecks and optimize performance
-		\item Implemented firewall rules to enhance network security and prevent unauthorized access
-		\item Conducted regular vulnerability assessments and applied patches to secure systems
-		\item Collaborated with cross-functional teams to streamline IT processes and improve efficiency
-		\vspace{3pt}
-		\itemTitle{Client: Challenges Unlimited}
-		\item Configured monitoring tools to track system performance and troubleshoot issues proactively
-		\item Automated routine tasks using scripts to reduce manual effort and increase productivity
-		\item Documented system configurations and procedures for knowledge sharing within the team
-		\item Participated in disaster recovery planning and drills to ensure business continuity in case of emergencies
-		\vspace{3pt}
-		\itemTitle{Client: Broken Galleries}
-		\item Implemented cloud migration strategies to move applications to a hybrid environment
-		\item Optimized database performance through indexing and query tuning techniques
-		\item Conducted capacity planning and scalability assessments to support future growth
-		\item Provided on-call support for critical issues and worked on root cause analysis for incident resolution
+
+		\itemTitle{AI Assistant Builder project}{April 2024 - Present}
+		\item AI Assistant Builder is a customizable chatbot optimized for Intel hardware and showcased in multiple exhibitions such as MWC, CES, Computex, IFA.
+		\item Led Flex Malaysia team to develop backend of chatbot using llamaindex
+		\item Involved in development of most of the components and aspects of backend, including RAG pipeline, workflows, LLM serving, benchmarking, and CI/CD.
+		\vspace{6pt}
+		\itemTitle{Platform recommender chatbot project}{Jul 2024 - Dec 2024}
+		\item Chatbot collects requirements from users and recommends the most suitable Intel platform
+		\item Developed proposal for project, which uses langchain agents
+		\item Provided technical support for team to succesfully deliver the project.
+		\vspace{6pt}
+		\itemTitle{Flex knowledgebase chatbot POC}{Jan 2024 - Dec 2024}
+		\item POC is an internal-use tool to answer questions on Flex's knowledgebase and a training ground for team members
+		\item Developed POC proposal and led team to develop and deploy chatbot.
+		\vspace{6pt}
+		\itemTitle{IPEX-LLM project}{Oct 2023 - Mar 2024}
+		\item IPEX-LLM is an LLM acceleration library optimized for Intel hardware.
+		\item Contributed to debugging, validation, unit tests, benchmarking, documentation, and enabling IPEX-LLM for WebUI application.
+		\vspace{6pt}
+		\itemTitle{MLOps POC}{Jan 2023 - Dec 2023}
+		\item Led team to implement MLOps practices to streamline model training, deployment, and monitoring on an image classification project.
+		\item Kubeflow pipelines used for pipeline orchestration, DVC+minio for data versioning, MLflow for experiment tracking, and MLEM for model serving.
+		\vspace{6pt}
+		\itemTitle{Intel Scenescape project}{April 2022 - Sept 2022}
+		\item Developed radar processing pipeline for human detection and tracking using Intel Scenescape.
+		\vspace{6pt}
+		\itemTitle{Data science and ML mini-TFA lead}
+		\item As a technical focus area lead in AI-related topics, improved team competency in AI topics by planning learning roadmap and learning initiatives such as sharing sessions, POCs, and workshops.
+		\item Provided technical guidance and advice to TFA and department engineers on AI-related subjects.
+		\item Sharing of AI techniques with TFA and department engineers
+		\vspace{6pt}
+		
+
 	\end{resume_list}
 	
-	\headingBf{HealthCo Industries}{Feb 2011 -- Mar 2016}
-	\headingIt{Senior Systems Administrator (SRE)}{}
+	\headingBf{Nanyang Technological University}{May 2016 - Feb 2022}
+	\headingIt{Research Fellow}{}
 	\begin{resume_list}
-		\item Managed virtualized server environment spanning multiple data centers
-		\item Oversaw migration of critical business applications to cloud-based platforms
-		\item Configured and monitored network security measures, including firewalls and intrusion detection systems
-		\item Implemented multi-factor authentication for remote access to company systems
-		\item Streamlined patch management process, reducing vulnerabilities and downtime
-		\item Conducted regular vulnerability assessments and penetration testing
-		\item Automated server provisioning and configuration management tasks
-		\item Maintained documentation for IT policies and procedures
-		\item Coordinated responses to cybersecurity incidents with internal teams and external vendors
+		\itemTitle{Car cabin monitoring project (Continental-NTU Corporate Lab)}{Jan 2021 - Feb 2022}
+		\item Developed deep learning-based methods for monitoring persons and objects in car cabin. Patent filed.
+		\item Researched state of the art methods for object detection, pose estimation, and action recognition.
+		\item Conducted undergraduate lab session on deep learning-based object detection
+		\vspace{3pt}
+		\itemTitle{Traffic monitoring project (ST Engineering-NTU Corporate Lab)}{April 2019 - Dec 2020}
+		\item Developed Deep Learning-based vehicle detector and tracker for traffic monitoring. Implementation in Python and Tensorflow outperforms all other methods in UA-Detrac 2017 benchmark.
+		\item Filed invention disclosure for vehicle detector and tracker. Method to be deployed for automated highway vehicle monitoring and airport traffic monitoring.
+		\item Applied fine tuning of vehicle detector and tracker for local traffic. Set up and managed video annotation system.
+		\item Developed lane marker detection and lane detection algorithm from traffic camera feed. Implementation in Python and OpenCV. Filed invention disclosure.
+		\item Mentored a MSc student and an undergraduate research student in projects involving vehicle tracking and traffic data analysis.
+		\vspace{3pt}
+		\itemTitle{Rain removal project (ST Engineering-NTU Corporate Lab)}{May 2016 - March 2019}
+		\item Implemented superpixel segmentation-based rain removal using C++/OpenCV and CUDA. Applied algorithm level and code level optimization to achieve near real-time operation. Filed invention disclosure for method.
+		\item Published rain removal method in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2018
+		\item Implemented video-based haze removal using C++/OpenCV
+		\item Publications in topics of haze/fog removal and light field camera-based rain removal
+		\item Mentored two undergraduate final year students in projects involving motion detection and video stabilizatio
+	\end{resume_list}
+
+	\headingBf{Nanyang Technological University}{Feb 2014 - April 2016}
+	\headingIt{Research Engineer}{}
+	\begin{resume_list}
+		\itemTitle{Rain removal POC}{May 2016 - March 2019}
+		\item Implemented a rain removal program using C++/OpenCV for vehicle navigation
+		\item Implemented a GUI for video capture using Pointgrey surround camera
 	\end{resume_list}
 	
 	%-----------%
@@ -268,35 +307,45 @@
 	
 	\section{Education}
 	
-	\headingBf{State University}{} % Note: Adding year(s) exposes an implied age
-	\headingIt{Bachelor of Science in Computer Information Systems}{}
-	\headingIt{Minors: Networking ; Network Security}{}
-	
+	\headingBf{Nanyang Technological University}{Jan 2008 - Jan 2015} % Note: Adding year(s) exposes an implied age
+	\headingIt{Ph.D in Electrical and Electronics Engineering}{}
+	\headingIt{Awarded NTU PhD Research Scholarship.}{}
+	\headingIt{Research in computer graphics mesh simplification using image-based mesh simplification methods}{}
+	\headingIt{Research in motion capture data recovery using low rank estimation methods}{}
+
 	\vspace{5pt}
-	\headingBf{Certifications}{}
-	\begin{resume_list}
-		\item Salt \hspace{2pt}- SaltStack Certified Engineer
-		\item GCP - Professional Cloud Architect
-	\end{resume_list}
+
+	\headingBf{Nanyang Technological University}{Jul 2003 - May 2007} % Note: Adding year(s) exposes an implied age
+	\headingIt{B.Eng. in Electrical and Electronics Engineering (1st class honors)}{}
+	\headingIt{Awarded an ASEAN Undergraduate Scholarship.}{}
+	\headingIt{Graduated under Dean's List (top 5\% of cohort).}{}
+	\headingIt{Improved motion compensator block of a H.264 video decoder using VHDL for Final Year Project.}{}
+	
+	% \vspace{5pt}
+	% \headingBf{Certifications}{}
+	% \begin{resume_list}
+	% 	\item Salt \hspace{2pt}- SaltStack Certified Engineer
+	% 	\item GCP - Professional Cloud Architect
+	% \end{resume_list}
 	
 	%----------------------------%
 	% Extracurricular Activities %
 	%----------------------------%
 	
-	\section{Projects}
+	% \section{Projects}
 	
-	\headingBf{Hospital / Health Science IRB}{Mar 2015 -- Present}
-	\begin{resume_list}
-		\item Served as non-scientific/unaffiliated patient-representative
-		\item Reviewed patient consent forms for completeness, accuracy, and clarity
-		\item Became familiar with industry standards and regulations (OHRP, HIPAA)
-	\end{resume_list}
+	% \headingBf{Hospital / Health Science IRB}{Mar 2015 -- Present}
+	% \begin{resume_list}
+	% 	\item Served as non-scientific/unaffiliated patient-representative
+	% 	\item Reviewed patient consent forms for completeness, accuracy, and clarity
+	% 	\item Became familiar with industry standards and regulations (OHRP, HIPAA)
+	% \end{resume_list}
 	
-	\headingBf{Debian Linux}{Jan 2001 -- Present}
-	\begin{resume_list}
-		\item Maintained packages in Debian repositories
-		\item Reviewed and sponsored packages on behalf of prospective Developers
-		\item Resolved bugs reported in bug tracking system
-	\end{resume_list}
+	% \headingBf{Debian Linux}{Jan 2001 -- Present}
+	% \begin{resume_list}
+	% 	\item Maintained packages in Debian repositories
+	% 	\item Reviewed and sponsored packages on behalf of prospective Developers
+	% 	\item Resolved bugs reported in bug tracking system
+	% \end{resume_list}
 	
 \end{document}
