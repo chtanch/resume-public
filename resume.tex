@@ -37,6 +37,10 @@
 % Serif
 %\usepackage{CormorantGaramond}
 \usepackage{charter}
+\usepackage[backend=biber,style=authoryear,sorting=ydnt,defernumbers=true]{biblatex}
+
+% Add your bibliography file
+\addbibresource{publications.bib}
 
 % Colors
 % Use with \color{Name}
@@ -322,7 +326,19 @@
 	\headingIt{Graduated under Dean's List (top 5\% of cohort).}{}
 	\headingIt{Improved motion compensator block of a H.264 video decoder using VHDL for Final Year Project.}{}
 	
-	% \section{Publications}
-	%\input{publications.tex}
+	%--------------%
+	% Publications %
+	%--------------%
+	
+	\section{Publications}
+	\nocite{*}
+	
+	% Use biblatex to print bibliography
+	% Sort by year (descending), then by name, then by title
+	\begingroup
+	\footnotesize
+	\setlength\bibitemsep{3pt} % Adjust spacing between items
+	\printbibliography[heading=none]
+	\endgroup
 	
 \end{document}
