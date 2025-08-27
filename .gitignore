@@ -21,7 +21,8 @@
 *.mtc1
 *.out
 *.synctex*
-
+*.bcf
+*.xml
 
 *.bst
 
