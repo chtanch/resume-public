@@ -1,0 +1,28 @@
+name: build-resume
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Compile latex
+      uses: xu-cheng/latex-action@v4
+      with:
+        root_file: resume.tex
+
+    - name: Rename PDF with git SHA
+      run: |
+        SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-6)
+        mv resume.pdf "resume-${SHORT_SHA}.pdf"
+
+    - name: Upload PDF as workflow artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume-pdf
+        path: resume-*.pdf
