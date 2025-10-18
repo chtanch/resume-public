@@ -22,7 +22,8 @@ jobs:
     - name: Rename PDF with git SHA
       run: |
         SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-6)
-        mv resume.pdf "resume-${SHORT_SHA}.pdf"
+        DATE=$(date +'%y%m%d')
+        mv resume.pdf "resume-${DATE}-${SHORT_SHA}.pdf"
 
     - name: upload to rolling release
       uses: softprops/action-gh-release@v2
