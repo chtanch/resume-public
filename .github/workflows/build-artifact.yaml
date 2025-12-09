@@ -2,14 +2,22 @@ name: build-artifact
 
 on:
   workflow_dispatch:
+  push: 
+    branches:
+      - main
 
 jobs:
-  build-resume:
+  build-artifact:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+
+    - name: Replace secret placeholders
+      run: |
+        sed -i "s/PHONE-REDACT/${{ secrets.PHONE_NUMBER }}/g" resume.tex
+        sed -i "s/EMAIL-REDACT/${{ secrets.EMAIL_ADDRESS }}/g" resume.tex
 
     - name: Compile latex
       uses: xu-cheng/latex-action@v4
@@ -19,7 +27,8 @@ jobs:
     - name: Rename PDF with git SHA
       run: |
         SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-6)
-        mv resume.pdf "resume-${SHORT_SHA}.pdf"
+        DATE=$(date +'%y%m%d')
+        mv resume.pdf "resume-${DATE}-${SHORT_SHA}.pdf"
 
     - name: Upload PDF as workflow artifact
       uses: actions/upload-artifact@v4
