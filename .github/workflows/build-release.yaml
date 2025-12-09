@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write   # allow creation of releases
+
 jobs:
   build-release:
     runs-on: ubuntu-latest
